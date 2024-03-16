@@ -1,0 +1,9 @@
+{% load static %}
+
+
+{% if request.user.is_authenticated %} 
+<script type="text/javascript">var USER_NAME = "{{ username }}";</script>
+<script type="text/javascript" src="{% static 'app.js' %}"></script>
+
+{% endif %}
+
